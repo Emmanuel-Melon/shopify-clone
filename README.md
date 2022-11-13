@@ -1,4 +1,4 @@
-# shopify-clone
+# Shopify Clone
 ## Getting Started
 
 Running the server
