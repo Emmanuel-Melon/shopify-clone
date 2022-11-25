@@ -1,0 +1,117 @@
+{% extends 'base.html' %} {% load static %} Shopify Clone
+{% block others %}
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock others %} {% block content %} {% include "partials/navbar.html" %}
+<header
+  class="min-h-screen bg-black bg-opacity-75 showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat"
+  style="background: #004c3f; color: white;"
+>
+  <div
+    class="z-10 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col"
+    style="display: flex; align-items: center;"
+  >
+    <div style="padding:4rem">
+        <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
+            If you can dream it, you can sell it with Shopify
+          </h1>
+          <h3 class="text-xl md:text-xl py-5">
+            Build your business here. Take it anywhere.
+          </h3>
+          <div>
+            <input type="text" placeholder="Enter your email address" style="padding: 0.5rem;"/>
+            <button style="background: #008060;  color: white; padding: 0.5rem;">Start Free Trial</button>
+          </div>
+          <p class="text-sm md:text-lg pb-3">
+            Try Shopify free for 3 days, no credit card required. By entering your
+            email, you agree to receive marketing emails from Shopify.
+          </p>
+    </div>
+    <figure>
+        <img
+        src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/desktop-refresh/hero-large-f5f7bd926fa6c43a0c97bf1714f7e5227a18bb6952a6599208b2c8b2cab514d4.png?quality=50"
+        alt="brands"
+        height="auto"
+        width="90%"
+      />
+      </figure>
+    
+  </div>
+</header>
+
+<section >
+  <h3>
+    Discover why millions of entrepreneurs choose Shopify to build their
+    business—from Hello World to IPO.
+  </h3>
+  <figure>
+    <img
+    src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/desktop-refresh/app-store-desktop-large-6109500f5cb17f988789fa730b4a81142a98135d2ba401c90ce906a8003bbd6f.png?quality=50"
+    alt="brands"
+    height="auto"
+    width="90%"
+  />
+  </figure>
+
+  <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6" style="display: flex; padding: 2rem; ">
+    <div>
+      <h3>Store Builder</h3>
+      <p>
+        Bring your vision to life with our easy-to-use store creator. No coding
+        expertise required—just your next big idea.
+      </p>
+      <button>Build the brand you want</button>
+    </div>
+    <div>
+        <h3>Store Builder</h3>
+        <p>
+          Bring your vision to life with our easy-to-use store creator. No coding
+          expertise required—just your next big idea.
+        </p>
+        <button>Build the brand you want</button>
+      </div>
+      <div>
+        <h3>Store Builder</h3>
+        <p>
+          Bring your vision to life with our easy-to-use store creator. No coding
+          expertise required—just your next big idea.
+        </p>
+        <button>Build the brand you want</button>
+      </div>
+  </div>
+</section>
+
+<section style="display: flex; padding: 2rem; align-items: center;">
+    <div>
+        <h3>Connect with customers everywhere</h3>
+        <p>
+            Sell online, in person, or both with the marketing tools, social integrations, and sales channels you need to get your products in front of customers—and out the door.
+        </p>
+        <button>Marketing made easy</button>
+    </div>
+    <figure>
+        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/desktop-refresh/sell-large-b1d708a1d1b26bb0e8f42fea19b248f453e532f0c552f85603e1f26f783c711c.png?quality=50" height="auto" width="100%" alt="logo" />
+    </figure>
+</section>
+
+<section style="display: flex; padding: 2rem; align-items: center;">
+    <figure>
+        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/desktop-refresh/manage-large-b73354762084c131bbf3d45a32e40275c1dcf492381a7c334410229715c4e5b5.png?quality=50" height="auto" width="100%" alt="logo" />
+    </figure>
+    <div>
+        <h3>Connect with customers everywhere</h3>
+        <p>
+            Sell online, in person, or both with the marketing tools, social integrations, and sales channels you need to get your products in front of customers—and out the door.
+        </p>
+        <button>Marketing made easy</button>
+    </div>
+</section>
+
+<footer class="px-5 py-10" style="background: #004c3f">
+  <ul class="flex justify-between items-center">
+    <li>&copy; 2022</li>
+    <li>Made with Django and Tailwind</li>
+    <li>By Eman</li>
+  </ul>
+</footer>
+
+{% endblock content %}
