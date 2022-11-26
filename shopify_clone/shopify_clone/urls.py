@@ -16,9 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from . import views
+
 urlpatterns = [
-    # path('/', views.index, name="home"),
+    path('', views.index, name="home"),
     path('admin/', admin.site.urls),
     path('store/', include('store.urls')),
+    path('orders/', include('orders.urls')),
+    path('products/', include('products.urls')),
+    path('customers', include('customers.urls')),
     path("__reload__/", include("django_browser_reload.urls")),
 ]
+

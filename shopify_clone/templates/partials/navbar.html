@@ -1,20 +1,20 @@
 {% load static %}
 <nav
-  class="flex text-gray-100 justify-between items-center py-3 px-4 fixed w-full z-50"
+  class="flex justify-between items-center w-full"
 >
-  <div class="w-6/12" style="display: flex; justify-content: space-between; width: 100%; background: #004c3f;  color: white; align-items: center;">
-    <ul style="display: flex; list-style-type: none; width: fit-content;">
+  <div class="flex justify-between items-center bg-[#004c3f] w-full" >
+    <ul class="flex list-none px-4 py-4">
       <li style="padding: 0.2rem">Start</li>
       <li style="padding: 0.2rem">Sell</li>
       <li style="padding: 0.2rem">Market</li>
       <li style="padding: 0.2rem">Manage</li>
     </ul>
 
-    <ul style="display: flex; list-style-type: none; width: fit-content; align-items: center;">
+    <ul class="flex list-none items-center px-4 py-4">
         <li style="padding: 0.2rem">Pricing</li>
         <li style="padding: 0.2rem">Learn</li>
         <li style="padding: 0.2rem">Login</li>
-        <Button style="background: #008060;  color: white; padding: 0.5rem; margin-left: 1rem; margin-right: 1rem">Start Free Trial</Button>
+        <Button style="background: #008060;  color: white; padding: 0.5rem; margin-left: 1rem; margin-right: 1rem" class="rounded-md">Start Free Trial</Button>
       </ul>
   </div>
 </nav>
