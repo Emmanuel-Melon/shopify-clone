@@ -1,23 +1,29 @@
 {% extends 'base.html' %} {% load static %} Shopify Clone {% block others %}
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 {% endblock others %} {% block content %} {% include "partials/sidebar.html" %}
-<main>
-  <section class="bg-white p-8 ">
-    <figure class="w-12">
-        <img src="https://cdn.shopify.com/shopifycloud/web/assets/v1/67d1bd2ad29c4adc50fb195375f31fcb1674823604794398778c01f6c185d702.svg" 
-        alt="placeholder"
-        class=""
-        />
-    </figure>
-    <div>
-      <h3>First up: what are you selling?</h3>
-      <p>Before you open your store, first you need some products.</p>
+<section class="flex items-center justify-center">
+  <div class="w-full">
+    <h3>Products</h3>
+    <div class="w-full flex items-center justify-center">
+      <div class="bg-white w-full px-4 py-8">
+        <figure class="w-12">
+          <img
+            src="https://cdn.shopify.com/shopifycloud/web/assets/v1/67d1bd2ad29c4adc50fb195375f31fcb1674823604794398778c01f6c185d702.svg"
+            alt="placeholder"
+            class=""
+          />
+        </figure>
+        <div>
+          <h3>First up: what are you selling?</h3>
+          <p>Before you open your store, first you need some products.</p>
+        </div>
+        <div>
+          <button class="bg-white px-2">Find products to sell</button>
+          <button class="bg-black px-2">Add your products</button>
+        </div>
+      </div>
     </div>
-    <div>
-      <button class="bg-white p-2" >Find products to sell</button>
-      <button class="bg-black p-2">Add your products</button>
-    </div>
-  </section>
-</main>
+  </div>
+</section>
 
 {% endblock content %}

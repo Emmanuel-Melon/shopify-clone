@@ -3,14 +3,27 @@
 {% endblock others %} {% block content %} {% include "partials/sidebar.html" %}
 <main>
   <section>
-    <div class="flex gap-4  bg-black">
+    <div class="flex gap-4 bg-black">
       <button>Back</button>
       <h3>Add product</h3>
     </div>
-    <div class="grid gap-4">
-      <input type="text" placeholder="short sleeve t-shirt" />
-      <textarea placeholder="description"></textarea>
-    </div>
+    <p>{{title}}</p>
+
+    <form method="post" action="{% url 'add_new_product' %}">
+      {% csrf_token %}
+      <input type="submit" value="Save" />
+      <div class="bg-white w-fit">
+        {% if error_message %}
+        <p><strong>{{ error_message }}</strong></p>
+        {% endif %}
+        <label for="title">Title</label
+          >
+        <input type="text" id="title" placeholder="short sleeve t-shirt" />
+        <label for="description">description</label
+        >
+        <textarea placeholder="description" id="description"></textarea>
+      </div>
+    </form>
   </section>
 </main>
 
