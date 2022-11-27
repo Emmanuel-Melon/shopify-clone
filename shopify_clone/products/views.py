@@ -30,5 +30,3 @@ def add_new_product(request):
         pk: "Hello, World"
     }
     return HttpResponse(template.render(context, request))
-
-

@@ -31,10 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'store.apps.StoreConfig',
-    'orders.apps.OrdersConfig',
-    'customers.apps.CustomersConfig',
-    'products.apps.ProductsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tailwind',
     'theme',
-    'django_browser_reload'
+    'django_browser_reload',
+
+    # apps
+    'store.apps.StoreConfig',
+    'orders.apps.OrdersConfig',
+    'customers.apps.CustomersConfig',
+    'products.apps.ProductsConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,10 +132,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR/'static_root'
-MEDIA_ROOT=BASE_DIR/'media'
-MEDIA_URL='/media/'
+MEDIA_ROOT = BASE_DIR/'media'
+MEDIA_URL = '/media/'
 
-STATICFILES_DIRS=[
+STATICFILES_DIRS = [
     BASE_DIR/'static'
 ]
 
