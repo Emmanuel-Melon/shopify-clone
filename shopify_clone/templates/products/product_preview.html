@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% load static %} Shopify Clone {% block others %}
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock others %} {% block content %} {% include "partials/sidebar.html" %}
+<section class="flex items-center justify-center">
+  <div class="px-4 py-4 flex">
+    <figure class="w-2">
+      <img src="{{product.image_url}}" alt="placeholder" class="" />
+    </figure>
+    <div class="px-4 py-4">
+      <h3>{{product.product_name}}</h3>
+      <h5>1,300,000 UGX</h5>
+      <div class="flex flex-col">
+        <button class="bg-white">Add to cart</button>
+        <button class="bg-black">Buy it now</button>
+      </div>
+      <p>{{product.product_description}}</p>
+      <ul>
+        <li>Materials</li>
+        <li>Shipping & Returns</li>
+        <li>Dimsensions</li>
+        <li>Care Instructions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

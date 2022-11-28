@@ -4,6 +4,21 @@
 <section class="flex items-center justify-center">
   <div class="w-full">
     <h3>Products</h3>
+    <div class="flex justify-evenly">
+      {% for product in products %}
+      <div class="px-4 py-4 ">
+        <figure class="w-8">
+          <img
+            src={{product.image_url}}
+            alt="placeholder"
+            class=""
+          />
+        </figure>
+        <h3>{{product.product_name}}</h3>
+        <p>{{product.product_description}}</p>
+      </div>
+      {% endfor %}
+    </div>
     <div class="w-full flex items-center justify-center">
       <div class="bg-white w-full px-4 py-8">
         <figure class="w-12">
@@ -19,7 +34,7 @@
         </div>
         <div>
           <button class="bg-white px-2">Find products to sell</button>
-          <button class="bg-black px-2">Add your products</button>
+          <button class="px-2">Add your products</button>
         </div>
       </div>
     </div>

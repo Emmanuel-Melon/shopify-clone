@@ -2,7 +2,7 @@
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 {% endblock others %} {% block content %} {% include "partials/sidebar.html" %}
 <section>
-  <form method="post" action="{% url '' %}">
+  <form method="post" action="{% url 'add_new_product' %}">
     {% csrf_token %}
     <div class="flex justify-between bg-white w-full px-4 py-8">
       <button>Back</button>
